@@ -1,0 +1,65 @@
+---
+title: R para Ciência de Dados I
+format: 
+  revealjs:
+    css: custom.css
+---
+
+# Sobre a Curso-R
+
+## A empresa
+
+:::: {.columns}
+
+::: {.column width="50%"}
+```{r, echo = FALSE, fig.align='center', out.width="60%"}
+knitr::include_graphics("https://d33wubrfki0l68.cloudfront.net/295643c6243701ae6a9bac3fb8ad467ff0ce3c84/d1785/img/logo/cursor1-41.png")
+```
+
+```{r, echo = FALSE, out.width="60%", fig.align='center'}
+knitr::include_graphics("img/logo_r6.png")
+```
+
+:::
+
+::: {.column width="50%"}
+```{r, echo = FALSE, fig.align='center', out.width="60%"}
+knitr::include_graphics("img/produtos.png")
+```
+:::
+
+::::
+
+<br>
+
+<center>
+### [www.curso-r.com](https://www.curso-r.com)
+</center>
+
+## Reprodutibilidade: o código é uma linguagem
+
+Podemos documentar a nossa análise
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(magick)
+```
+
+```{r frink, eval = FALSE, echo = TRUE}
+image_read("https://jeroen.github.io/images/frink.png") |>
+  image_rotate(270) |>
+  image_background("blue", flatten = TRUE) |>
+  image_border("red", "10x10") |>
+  image_annotate("Linguagens de programação ainda\nsão linguagens!",
+                 color = "white", size = 30)
+```
+
+. . .
+
+<img src = "https://jeroen.github.io/images/frink.png" style="width:10%; display: inline;">
+
+. . .
+
+```{r frink-out, ref.label="frink", echo=FALSE}
+
+```
+
